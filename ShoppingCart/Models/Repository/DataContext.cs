@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using ShoppingCart.Models;
 
 namespace ShoppingCart.Models.Repository
 {
@@ -13,5 +14,6 @@ namespace ShoppingCart.Models.Repository
 		public DbSet<CategoryModel> Categories { get; set; }
 		public DbSet<OrderModel> Orders { get; set; }
 		public DbSet<OrderDetail> OrderDetails { get; set; }
+	    public DbSet<ShoppingCart.Models.UserModel> UserModel { get; set; }
 	}
 }

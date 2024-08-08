@@ -6,8 +6,8 @@ using ShoppingCart.Models.Repository;
 namespace ShoppingCart.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	[Authorize]
-	public class OrderController : Controller
+    [Authorize(Roles = "Author, Admin")]
+    public class OrderController : Controller
 	{
 		private readonly DataContext _dataContext;
 
