@@ -99,7 +99,6 @@ namespace ShoppingCart.Areas.Admin.Controllers
             ViewBag.Categories = new SelectList(_dataContext.Categories, "Id", "Name", product.CategoryId);
             ViewBag.Brands = new SelectList(_dataContext.Brands, "Id", "Name", product.BrandId);
 
-
             return View(product);
         }
 
