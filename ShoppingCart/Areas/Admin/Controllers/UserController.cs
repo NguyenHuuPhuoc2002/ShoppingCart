@@ -78,7 +78,7 @@ namespace ShoppingCart.Areas.Admin.Controllers
             }
             else
             {
-                TempData["error"] = "Model có một vài thứ đang bị lỗi";
+                TempData["error"] = "Model có một vài thứ đang bị lỗi ok nhé";
                 var errors = new List<string>();
                 foreach (var value in ModelState.Values)
                 {
